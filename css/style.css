@@ -31,7 +31,8 @@ img{
 .header{
   /* border: 2px solid black; */
   /* width: 80px; */
-  border: 1px solid #ECECEC;
+
+  padding-left: 215px;
 }
 .container-header{
         /* width: 1200px; */
@@ -53,7 +54,7 @@ img{
 
     text-decoration: none;
 
-    margin-left: 215px;
+    /* margin-left: 215px; */
     margin-right:93px;
     margin-top: 24px;
     margin-bottom: 24px;
@@ -73,6 +74,9 @@ img{
 .links{
         margin-top: 34px;
 }
+.menu-blocks{
+    display: flex;
+}
 .links-menu{
     text-decoration: none;
 
@@ -90,8 +94,9 @@ img{
     padding-bottom: 7px;
 
 }
-.links-menu:nth-last-child(n+1){
-margin-left: 50px;
+.menu-blocks li:not(:last-child),
+.header-links-block li:not(:last-child) {
+margin-right: 50px;
 }
 .links-menu:hover{
     color: var(--secondary-color);
@@ -110,7 +115,6 @@ margin-left: 50px;
     white-space: nowrap;
 }
 .contacts-header {
-    margin-right: 50px;
     padding-top: 7px;
     padding-bottom: 7px;
 }
@@ -188,14 +192,13 @@ padding-bottom: 200px;
 /* HEADING */
 .under-hero{
     box-sizing:border-box;
+        padding-top: 94px;
+        padding-bottom: 94px;
 }
 .heading{
     display: flex;
 
     letter-spacing: 0.03em;
-
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .heading li:not(:last-child){
@@ -245,7 +248,7 @@ padding-bottom: 200px;
         line-height: 1.2;
         text-align: center;
         letter-spacing: 0.03em;
-        padding-top: 94px;
+        /* padding-top: 94px; */
         padding-bottom: 50px;
 }
 .classes-img {
@@ -265,6 +268,8 @@ padding-bottom: 200px;
 /* Team info */
 .team{
     background-color:var(--team-bg-color);
+        padding-top: 94px;
+        padding-bottom: 94px;
 }
 .team-block{
     background-color:var(--whitey-color);
@@ -291,7 +296,7 @@ padding-bottom: 10px;
 }
 .best-team-member{
 display: flex;
-padding-bottom: 94px;
+/* padding-bottom: 94px; */
 }
 .team-profession{
     color:var(--rare-color);
@@ -312,6 +317,7 @@ padding-bottom: 94px;
 .footer{
     background-color:var(--hero-bg-color);
         padding-bottom: 60px;
+        padding-top: 60px;
 }
 .container-footer{
         width: 1200px;
@@ -361,8 +367,6 @@ padding-bottom: 94px;
     text-decoration: none;
 
     display: block;
-
-padding-top: 60px;
 }
 /* .web-studio-footer:first-child{
     margin-top: 20px;
@@ -375,7 +379,8 @@ padding-top: 60px;
 } */
 .web-studio-footer,
 .address-location,
-.contacts{
+.contacts,
+.contacts-footer{
     display: inline-block;
 }
 
