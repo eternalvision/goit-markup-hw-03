@@ -29,15 +29,14 @@ img{
 /* STUDIO */
 /* Header */
 .header{
-  /* border: 2px solid black; */
-  /* width: 80px; */
-
-  padding-left: 215px;
+border: 1px solid #ECECEC;
 }
 .container-header{
         /* width: 1200px; */
         padding-left: 15px;
         padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
         display: flex;
 }
 .header-links-block {
